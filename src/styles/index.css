@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+img { 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}   
+
+.searchImg { 
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+} 
+
+div.container {
+    width: 100vw;
+    height: 69.2vh;
+}
+
+/* Component Login */
+
+.login-form.container-fluid{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.login-form.container-fluid form {
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.login-form.container-fluid form:hover {
+    opacity: 0.9;   
+}
+
+.login-form.container-fluid form h4 {
+    text-align: center;
+    padding: 1em;
+}
+
+.login-form.container-fluid button {
+    width: 100%;
+    align-items: center;
+}
+.login-form.container-fluid form input {
+    margin: 0.5em 0 0.5em 0;
+}
+
+/* Component Team */
+
+div .container-sm {
+    margin: 0;
+}
+
+.teamItem {
+    text-align: center;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background-color: #e0e0e0;  
+    box-sizing: border-box;
+    transition: 0.3s all ease-in-out;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamItem:hover {
+    background-color: #f0f0f0;
+}
+
+.teamItem h2 {
+    text-transform: uppercase;
+    padding: 0.2em;
+}
+
+.teamItem img {
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+.teamPowers .row{  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: capitalize;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+.teamPowers div p {
+    padding: 0.1em;
+}
+
+.itemPower {
+    text-align: center;  
+}
+
+.justify-content-md-center .row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.btn {
+    margin: 0.1em 0.1em 0.5em 0.1em;
+    outline: none;
+}
+
+/* Component Search */
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    margin: 3.2em;
+}
+
+.form-group .form-control {
+    margin-top: 0.1em;
+}
+
+#root > div.fade.alert.alert-dark.alert-dismissible.show {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0px;
+}
+
+div.list-group.list-group-flush {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Component Sidebar*/
+
+.teamDetail.btn.btn-dark {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.teamDetail.btn.btn-dark i {
+    padding: 0.5em;
+}
+
+.closeDetail{
+    position: fixed;
+    z-index: 99;
+    bottom: 120px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #eaeaea;
+    transition: 0.3s all ease-in-out;
+}
+
+.closeDetail:hover {
+    opacity: 0.8;
+}
+
+.sidebarContainer {
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    left: 0;
+    height: 150px;
+    width: 100vw;
+    text-transform: capitalize;
+    background-color: #343a40;
+    text-align: center;
+    padding: 1.5em;
+    border-top: 1px solid #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+.teamStats {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 35%;
+    margin: 1em 0 0 3em;
+}
+
+.higherStat {
+    margin: 4%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    width: 50%;
+}
+
+.teamHeight div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.teamHeight div p {
+    margin: 0.2em;
+}
+
+/* Component Hero Detail */
+
+.hero-detail {
+    margin: 1em;
+}
+
+.hero-detail p {
+    margin: 0.2em;
+}
+
+.hero-detail ul {
+    list-style: none;
+    margin: 0.2em;
+}
+/* Media Queries */
+
+@media(max-width: 775px) and (min-width: 625px) {
+    .teamStats {
+        width: 60%;
+    }  
+}
+
+@media(max-width: 625px) {
+    .sidebarContainer {
+        height: 100vh;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .teamStats {
+        margin: 0;
+        padding: 0;
+    }
+
+    .stats {
+        width: 100%;
+    }
+
+    .closeDetail {
+        flex-direction: column;
+        position: fixed;
+        top: 10px;
+        z-index: 99;
+    }
+}
+
